@@ -1,40 +1,30 @@
-<DOCTYPE HTML>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Emobilis</title>
-    <!--link to bootstrap-->
-    <link href="bootstrap/css/bootstrap.css"rel="stylesheet"/>
-    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet"/>
-    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet"/>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-</head>
-    <body>
-<button> click me</button>
-
-    </body>
-
-</html>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portfolio</title>
+    <link href="css/style.css" rel="stylesheet"/>
+
     <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      display: inline;
+    }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Basic Reset for padding/margin */
-        * {
+        {
             box-sizing: border-box;
         }
 
-        /* Grid Layout */
         .container {
             display: grid;
             grid-template-rows: auto 1fr auto auto;
@@ -45,7 +35,6 @@
             margin: auto;
         }
 
-        /* Header Section */
         header {
             text-align: center;
             padding: 50px 0;
@@ -57,18 +46,17 @@
             object-fit: cover;
         }
 
-        /* Tagline Section */
         .tagline {
             text-align: center;
             font-size: 1.5rem;
             padding: 20px 0;
         }
 
-        /* Skills and Hobbies Section */
         .skills-hobbies {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
+
         }
         .skills-hobbies div {
             padding: 20px;
@@ -76,7 +64,6 @@
             border-radius: 8px;
         }
 
-        /* Footer Section */
         footer {
             background-color: #333;
             color: white;
@@ -92,8 +79,7 @@
             text-decoration: underline;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
+        @media (max-width: 600px) {
             .skills-hobbies {
                 grid-template-columns: 1fr;
             }
@@ -104,61 +90,59 @@
     </style>
 </head>
 <body>
+<nav>
+        <a href="#about">About Me</a>
+        <a href="contact informtion.html">Contact Me</a>
+    </nav>
 
-    <!-- Main Grid Container -->
+    <!-- About Me Section -->
+    <section id="about">
+        <h1>About Me</h1>
+        <p>Welcome to my portfolio! I'm a passionate web developer with experience in HTML, CSS, and JavaScript. I love creating interactive, user-friendly websites and applications. Feel free to explore my work and reach out via the contact page!</p>
+    </section>
+
     <div class="container">
 
-        <!-- Header Section -->
         <header>
-            <img src="your-photo.jpg" alt="Your Photo">
-            <!-- Use your own image by replacing 'your-photo.jpg' -->
+            <img src="me.jpg" alt="Your Photo">
         </header>
 
-        <!-- Tagline Section -->
         <div class="tagline">
             <h2>Welcome to My Portfolio!</h2>
-            <p>A passionate web developer creating interactive and user-friendly experiences.</p>
+            <p>A passionate web development and more, it can all and inspire you.</p>
         </div>
 
-        <!-- Skills and Hobbies Section -->
         <div class="skills-hobbies">
-            <!-- Column A - Skills -->
             <div>
                 <h3>My Skills</h3>
                 <ul>
-                    <li>HTML & CSS</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
-                    <li>Version Control (Git & GitHub)</li>
+                    <li>Artistry</li>
+                    <li>Coding</li>
+                    <li>data analysis</li>
+                    <li>Team work</li>
                 </ul>
             </div>
 
-            <!-- Column B - Hobbies -->
             <div>
                 <h3>My Hobbies</h3>
                 <ul>
-                    <li>Photography</li>
-                    <li>Hiking</li>
-                    <li>Reading Tech Blogs</li>
+                    <li>Singing</li>
+                    <li>Drawing</li>
+                    <li>Watching movies</li>
                     <li>Traveling</li>
-                    <li>Gaming</li>
                 </ul>
             </div>
         </div>
 
-        <!-- Footer Section -->
         <footer>
             <p>Connect with me:</p>
             <a href="https://twitter.com" target="_blank">Twitter</a> |
             <a href="https://github.com" target="_blank">GitHub</a> |
-            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="https://instagram.com" target="_blank">instagram</a>
         </footer>
 
     </div>
 
 </body>
 </html>
-
-
 
